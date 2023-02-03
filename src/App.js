@@ -3,6 +3,7 @@ import { ToDoCounter } from "./ToDoCounter";
 import { ToDoSearch } from "./ToDoSearch";
 import {Box} from './Box';
 import {ToDoList } from './ToDoList';
+import { ToDoItem } from "./ToDoItem";
 
 function App() {
 
@@ -33,7 +34,7 @@ const [search, setSearch]=React.useState('');
       <ToDoSearch search={search} setSearch={setSearch}/>
       <ToDoList>
         {todos.map(todo=>{
-            return <li key={todo.text}>{todo.text}</li>
+            return <ToDoItem todo = {todo} key={todo.text}/>
         })}
 
       </ToDoList>
