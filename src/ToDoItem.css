@@ -1,0 +1,16 @@
+.ToDoItem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgb(219, 124, 36);
+}
+.ToDoItem svg{
+    font-size: 20px;
+}
+.ToDoItem p{
+    font-size: 20px;
+}
